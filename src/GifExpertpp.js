@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GifExpertpp = () => {
+export const GifExpertpp = ( {defaultCategories = []}) => {
 
     
-    const [categories, setCategories] = useState(['Community'])
-
+    const [categories, setCategories] = useState( defaultCategories );
     return (
         <>
             <h2>GifExpertpp</h2>

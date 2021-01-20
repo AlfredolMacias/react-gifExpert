@@ -6,7 +6,9 @@ export const AddCategory = ( {setCategories} ) => {
     const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = (e) => {
-       setInputValue(e.target.value);    
+       setInputValue(e.target.value);  
+       
+       console.log('Se llamo al handleInputChange');
     }
 
     const handleSubmit = (e) => {
@@ -24,6 +26,7 @@ export const AddCategory = ( {setCategories} ) => {
         <form onSubmit = { handleSubmit }>
 
             {/* <h1>{ inputValue }</h1> */}
+            <p> { inputValue } </p>
             <input 
                 type= "text"
                 value =  { inputValue }
